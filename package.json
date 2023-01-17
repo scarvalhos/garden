@@ -15,12 +15,14 @@
     "dev:web": "turbo run dev --filter web",
     "dev:docs": "turbo run dev --filter docs",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "eslint-config-custom": "*",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.2.1",
