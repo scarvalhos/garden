@@ -1,6 +1,6 @@
-# Turborepo starter
+# Garden - Quick Starter
 
-This is an official Yarn v1 starter turborepo.
+A quick start turborepo with tailwindcss and typescript project.
 
 ## What's inside?
 
@@ -14,7 +14,7 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/) as a package manager. I
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+You can change and add new packages/apps just following the same structure. Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
@@ -23,14 +23,15 @@ This turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+- [Husky](https://typicode.github.io/husky/#/) for pre committing
+- [TailwindCSS](https://tailwindcss.com/) for styling your project
 
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-yarn run build
+yarn build
 ```
 
 ### Develop
@@ -38,8 +39,7 @@ yarn run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-yarn run dev
+yarn dev
 ```
 
 ### Remote Caching
@@ -49,7 +49,6 @@ Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 npx turbo login
 ```
 
